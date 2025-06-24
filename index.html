@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Экодом</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="navbar">
+            <div class="logo">
+                <h3>Экодом</h3>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#portfolio">Портфолио</a></li>
+                    <li><a href="#connect">Связаться</a></li>
+                    <li><a href="#company-details">Реквизиты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="main-banner">
+        <div class="banner-content">
+            <h1>Подарите себе жизнь за городом — комфортно и экологично</h1>
+            <p>Готовые дома в гармонии с природой. Всё продумано для вашего уюта.</p>
+        </div>
+    </section>
+
+    <section class="about">
+        <h2>О нас</h2>
+        <p>
+            Мы строим комфортные загородные дома, сочетая современные технологии и экологичные материалы.
+            Наша цель — создать для вас пространство, в котором хочется жить, отдыхать и наслаждаться природой.
+        </p>
+    </section>
+
+
+    <section id="portfolio" class="projects-section">
+        <h2>Выполненные проекты</h2>
+
+        <div class="project">
+            <div class="project-sliders swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/house1/1.jpg" alt="Изображение" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/house1/2.jpg" alt="Изображение" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/house1/3.jpg" alt="Изображение" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/house1/4.jpg" alt="Изображение" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/house1/5.jpg" alt="Изображение" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/house1/6.jpg" alt="Изображение" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/house1/7.jpg" alt="Изображение" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/house1/8.jpg" alt="Изображение" />
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+
+        <!-- Блок с контактной информацией -->
+        <div id="connect" class="contact-info bg-light py-4">
+            <div class="container text-center">
+                <h4 class="fw-bold text-primary mb-3">Свяжитесь с нами для получения подробностей</h4>
+                <p class="mb-2">Мы готовы ответить на все ваши вопросы и помочь с выбором идеального дома.
+                </p>
+                <p class="mb-3">
+                    <strong>Телефон:</strong>
+                    <a href="tel:+79143606666" class="text-dark fw-bold">+7 914 360-66-66</a>
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Блок с реквизитами -->
+    <div id="company-details" class="company-details">
+        <h4>Реквизиты компании</h4>
+        <p><strong>ИП:</strong> Рудый Евгения Семёновна</p>
+        <p><strong>ИНН:</strong> 753617337307</p>
+        <p><strong>ОГРН:</strong> 323750000007820</p>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.mySwiper', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            loop: true,
+            autoplay: {
+                delay: 5000, // автоматическая смена слайдов каждые 5 секунд
+            },
+        });
+    </script>
+
+
+</body>
+
+</html>
